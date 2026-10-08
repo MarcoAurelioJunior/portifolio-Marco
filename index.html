@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marco Aurélio Jr. | Portfólio</title>
+  <meta name="description" content="Analista de Sistemas com experiência em TOTVS Protheus (ADVPL/TLPP), SQL e integrações, e foco em Java, Spring Boot e Angular.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio">MA<span>.</span></a>
+    <nav id="menu" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button id="tema" class="icon-btn" aria-label="Alternar tema" title="Alternar tema">◐</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <div class="avatar" aria-label="Foto de Marco Aurélio">
+            <span>MA</span>
+            <!-- Coloque sua foto em assets/foto.jpg (quadrada, ao menos 400x400) -->
+            <img src="assets/foto.jpg" alt="Marco Aurélio Roque de Oliveira Júnior" onerror="this.remove()" onload="this.parentElement.classList.add('com-foto')">
+          </div>
+          <p class="eyebrow">Olá, eu sou</p>
+          <h1>Marco Aurélio<br>Roque de Oliveira Júnior</h1>
+          <p class="lead">Analista de Sistemas que une a experiência em <strong>ERP TOTVS Protheus</strong> e integrações corporativas ao desenvolvimento <strong>Full Stack</strong> com Java, Spring Boot e Angular.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn" href="#contato">Falar comigo</a>
+          </div>
+        </div>
+        <div class="card stats">
+          <div><strong>2024</strong><span>atuando com Protheus</span></div>
+          <div><strong>ADVPL / TLPP</strong><span>customizações e integrações</span></div>
+          <div><strong>Spring + Angular</strong><span>projetos próprios</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="wrap">
+      <h2>Sobre mim</h2>
+      <div class="two-col">
+        <p>Atuo como Analista de Sistemas na Apply System, com foco em sustentação, parametrização e desenvolvimento de customizações no <strong>TOTVS Protheus</strong>. No dia a dia levanto requisitos com o usuário, escrevo e otimizo consultas SQL, resolvo incidentes em processos corporativos e construo integrações entre o ERP e outros sistemas, como e-commerce, workflow por e-mail e APIs REST.</p>
+        <p>Em paralelo, curso Análise e Desenvolvimento de Sistemas e invisto em projetos próprios com <strong>Java, Spring Boot, APIs REST, Angular e React</strong>. Gosto de entender a arquitetura por trás do que construo e de documentar as decisões tomadas pelo caminho.</p>
+      </div>
+    </section>
+
+    <section id="habilidades" class="wrap">
+      <h2>Habilidades</h2>
+      <div class="grid skills">
+        <article class="card"><h3>Backend</h3><ul class="tags"><li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>JPA / Hibernate</li><li>JWT</li></ul></article>
+        <article class="card"><h3>Frontend</h3><ul class="tags"><li>Angular</li><li>React</li><li>TypeScript</li><li>JavaScript</li><li>HTML / CSS</li><li>PO UI</li></ul></article>
+        <article class="card"><h3>Bancos de dados</h3><ul class="tags"><li>SQL Server</li><li>PostgreSQL</li><li>Oracle</li><li>Firebase</li></ul></article>
+        <article class="card"><h3>ERP e corporativo</h3><ul class="tags"><li>TOTVS Protheus</li><li>ADVPL / TLPP</li><li>Integrações</li><li>Levantamento de requisitos</li></ul></article>
+        <article class="card"><h3>Ferramentas</h3><ul class="tags"><li>Git</li><li>Docker</li><li>Maven</li><li>Android Studio</li><li>n8n</li></ul></article>
+      </div>
+    </section>
+
+    <section id="projetos" class="wrap">
+      <h2>Projetos</h2>
+
+      <article class="project featured card">
+        <div class="shots" id="shots">
+          <img src="assets/portal-usuarios.png" alt="Portal Apply: lista de usuários">
+          <img src="assets/portal-dashboard.png" alt="Portal Apply: dashboard">
+          <img src="assets/portal-login.png" alt="Portal Apply: tela de login">
+        </div>
+        <div class="body">
+          <h3>Portal Apply</h3>
+          <p>Portal web para gerenciar usuários de acesso e acompanhar quem está online em duas operadoras, com abas por operadora, ações de bloquear/desbloquear e editar, cadastro de novos usuários e dashboard de uptime. Rotas restritas por perfil (ADMIN).</p>
+          <ul class="tags"><li>Angular 17</li><li>PO UI</li><li>TypeScript</li><li>REST</li></ul>
+          <a class="link" href="https://github.com/MarcoAurelioJunior/portalApply-PoUi" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </div>
+      </article>
+
+      <div class="grid projects">
+        <article class="card project">
+          <h3>MRQ Bank</h3>
+          <p>Backend bancário construído do zero para aprender arquitetura na prática: pacotes por domínio, autenticação com Spring Security + JWT, migrações com Flyway e documentação das decisões de arquitetura e dos erros encontrados.</p>
+          <ul class="tags"><li>Java 21</li><li>Spring Boot</li><li>PostgreSQL</li><li>Flyway</li><li>JWT</li></ul>
+          <a class="link" href="https://github.com/MarcoAurelioJunior/MRQ-Labs" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </article>
+
+        <article class="card project">
+          <h3>MRQ Labs: microsserviços</h3>
+          <p>Laboratório de serviços independentes em Spring Boot: cadastro de usuários (CRUD), sistema de pagamentos e sistema de notificações, explorando a comunicação entre serviços.</p>
+          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Microsserviços</li></ul>
+          <a class="link" href="https://github.com/MarcoAurelioJunior/MRQ-Labs" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </article>
+
+        <article class="card project">
+          <h3>SyncFlix</h3>
+          <p>Aplicação para duas pessoas assistirem ao mesmo conteúdo em dispositivos diferentes, de forma sincronizada. Salas com código, relógio de referência compartilhado, contagem regressiva e chat em tempo real via WebSocket (STOMP).</p>
+          <ul class="tags"><li>Angular</li><li>Spring Boot</li><li>WebSocket</li><li>STOMP</li></ul>
+        </article>
+
+        <article class="card project">
+          <h3>Sistema de Ordem de Serviço</h3>
+          <p>Sistema para abertura e acompanhamento de ordens de serviço, com front-end em React e TypeScript e API em Spring Boot.</p>
+          <ul class="tags"><li>React</li><li>TypeScript</li><li>Spring Boot</li></ul>
+        </article>
+
+        <article class="card project">
+          <h3>App Android com Firebase</h3>
+          <p>Aplicativo Android integrado ao Firebase Firestore para persistência e sincronização de dados.</p>
+          <ul class="tags"><li>Android</li><li>Firebase Firestore</li></ul>
+        </article>
+
+        <article class="card project">
+          <h3>Integrações no Protheus</h3>
+          <p>Projetos de trabalho, descritos de forma geral: sincronização de estoque entre o ERP e uma plataforma de e-commerce com jobs, fila e controle de reenvio, e fluxos de aprovação por e-mail com retorno automático ao ERP via API REST.</p>
+          <ul class="tags"><li>ADVPL / TLPP</li><li>Oracle</li><li>SQL</li><li>REST</li><li>Workflow</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia" class="wrap">
+      <h2>Experiência e formação</h2>
+      <ol class="timeline">
+        <li>
+          <span class="date">out/2024 – atual</span>
+          <h3>Analista de Sistemas · Apply System LTDA</h3>
+          <ul>
+            <li>Sustentação e parametrização do ERP TOTVS Protheus.</li>
+            <li>Desenvolvimento e manutenção de customizações em ADVPL/TLPP.</li>
+            <li>Construção e otimização de consultas SQL.</li>
+            <li>Análise e resolução de incidentes em processos corporativos.</li>
+            <li>Integrações do ERP com sistemas externos via API REST.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="date">em andamento</span>
+          <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas · Unifacens</h3>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contato" class="wrap contact">
+      <h2>Contato</h2>
+      <p>Vamos conversar? Me chame pelo LinkedIn ou confira meu código no GitHub.</p>
+      <div class="actions center">
+        <a class="btn primary" href="https://www.linkedin.com/in/marco-aur%C3%A9lio-roque-de-oliveira-j%C3%BAnior-401781277/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/MarcoAurelioJunior" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="ano"></span> Marco Aurélio Roque de Oliveira Júnior</footer>
+  <script src="script.js"></script>
+</body>
+</html>
